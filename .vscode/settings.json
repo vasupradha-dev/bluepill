@@ -9,5 +9,6 @@
   "C_Cpp.intelliSenseEngine": "default",
 
   "cortex-debug.armToolchainPath": "",
-  "cortex-debug.openocdPath": "openocd"
+"cortex-debug.openocdPath": "openocd",
+"cortex-debug.variableUseNaturalFormat": true
 }

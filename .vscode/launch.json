@@ -34,7 +34,11 @@
 
       "postRestartCommands": [
         "monitor reset halt"
-      ]
+      ],
+       "liveWatch": {
+        "enabled": true,
+        "samplesPerSecond": 4
+      }
     }
   ]
 }
