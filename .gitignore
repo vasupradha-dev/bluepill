@@ -1,0 +1,9 @@
+build/
+*.o
+*.obj
+*.elf
+*.bin
+*.map
+*.hex
+compile_commands.json
+cmake-build-*/
