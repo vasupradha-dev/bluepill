@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BluePill Debug",
+      "type": "cortex-debug",
+      "request": "launch",
+
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/bluepill_fw.elf",
+
+      "servertype": "openocd",
+      "serverpath": "/usr/bin/openocd",
+      "gdbPath": "/usr/bin/gdb-multiarch",
+
+      "configFiles": [
+        "${workspaceFolder}/openocd.cfg"
+      ],
+      "searchDir": [
+        "/usr/share/openocd/scripts"
+      ],
+
+      "device": "STM32F103C8",
+      "interface": "swd",
+      "runToEntryPoint": "main",
+
+      "svdFile": "${workspaceFolder}/lib/device/STM32F103.svd",
+
+      "showDevDebugOutput": "raw",
+
+      "preLaunchCommands": [
+        "monitor reset halt"
+      ],
+
+      "postRestartCommands": [
+        "monitor reset halt"
+      ]
+    }
+  ]
+}

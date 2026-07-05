@@ -1,6 +1,5 @@
 
-#include "blinky.hpp"
-
+#include "led.hpp"
 
 void wait() {
     for (volatile int i = 0; i < 50000; i++);
@@ -9,9 +8,9 @@ void wait() {
 int main()
 {
     
-    LedBlinky led_blue(GPIOA, 0);
-    LedBlinky led_red(GPIOA, 7);
-    LedBlinky led_yellow(GPIOB, 12);
+    Led led_blue(GPIOC, 15);
+    Led led_red(GPIOB, 15);
+    Led led_yellow(GPIOA, 5);
 
     while (1)
     {
