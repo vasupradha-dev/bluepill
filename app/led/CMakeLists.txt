@@ -6,4 +6,5 @@ target_sources(${TARGET} PRIVATE
 target_include_directories(${TARGET} PRIVATE
     ${CMAKE_SOURCE_DIR}/app/led/include
     ${CMAKE_SOURCE_DIR}/drivers/gpio/include
+    ${CMAKE_SOURCES_DIR}/drivers/rcc/include
 )
