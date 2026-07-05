@@ -9,6 +9,7 @@ add_executable(${TARGET})
 set_target_properties(${TARGET} PROPERTIES SUFFIX ".elf")
 
 # main app
+add_subdirectory(app/blinky)
 add_subdirectory(app/main)
 
 # startup file
